@@ -1,33 +1,61 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Git Access Token Test</title>
-</head>
-<body>
-	<h1>This is a test Document for the access token update against the password authentication	</h1>
-	<p>This is a simple step documentation of the newly updated GitHub Authentication utilising the Personal Access Token</p>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Git Access Token Test</title>
+	</head>
+	<body>
+		<h1>This is a test Document for the access token update against the password authentication	</h1>
+		<p>This is a simple step documentation of the newly updated GitHub Authentication utilising the Personal Access Token</p>
 
-	<h2>How to setup the Personal Access Token(PAT)</h2>
-	<ol>
-		<li>First click on your profile picture</li>
-		<li>Next navigate to the setting section of the dropdown</li>
-		<li>Take note of the navigation by the left hand side, scroll to the very end of that part, then click on <a href="https://github.com/settings/apps">Developer Setting</a> </li>
-		<li>Next click on the Generate new token</li>
-		<li>After this take time to go through all the checklist and ensure to set the duration for which you need this token for, for security reason, it is advisable and recommended</li>
-	</ol>
+		<h2><a name="steps">How to setup the Personal Access Token(PAT)</a></h2>
+		<ol>
+			<li>First click on your profile picture</li>
+			<li>Next navigate to the setting section of the dropdown</li>
+			<li>Take note of the navigation by the left hand side, scroll to the very end of that part, then click on <a href="https://github.com/settings/apps">Developer Setting</a> </li>
+			<li>Next click on the Generate new token</li>
+			<li>Do ensure to copy this toekn somewhere for easy access when it is needed and for the duration it was specified for</li>
+			<li>After this take time to go through all the checklist and ensure to set the duration for which you need this token for, for security reason, it is advisable and recommended</li>
+			<li>Scrolled to the end for the final stage, by clicking on Create/Generate as might indicate at the botrtom of the page</li>
+		</ol>
 
-	<!-- This part takes care of utilising the newly create PAT in a project -->
-	<h2>How to utilise the Personal Access Token (PAT)</h2>
-	<p>Cloning existing repository from GitHub </p>
-	<ul>
-		<li>Locate the repo on GitHub or better still create a new repo</li>
-		<li>Ensure all is set, then clone the repo to your local machine</li>
-		<li>To clone this, execute this command: "git clone REPO-URL-FROM-GITHUB" then hit the Return/Enter Key</li>
-		<li>By so doing, you have been able to make a copy of the repo on your local machine</li>
-		<li>create all your file structure as might required by your project</li>
-		<li>Follow with this git command to ensure and check the status, "git status" </li> 
-	</ul>
-</body>
-</html>
+		<!-- This part takes care of utilising the newly create PAT in a project -->
+		<h2>How to utilise the Personal Access Token (PAT)</h2>
+		<ol><strong>
+			<li>Cloning existing repository from GitHub </li>
+		</strong>
+		
+		<ul>
+			<li>Locate the repo on GitHub or better still create a new repo</li>
+			<li>Ensure all is set, then clone the repo to your local machine</li>
+			<li>To clone this, execute this command: "git clone REPO-URL-FROM-GITHUB" then hit the Return/Enter Key</li>
+			<li>By so doing, you have been able to make a copy of the repo on your local machine</li>
+			<li>create all your file structure as might required by your project</li>
+			<li>Follow with this git command to ensure and check the status, "git status" </li> 
+			<li>The git status, will reveal that the repo is still clean, just as it is when it was cloned, now, follow the hint as you deem fit</li
+			<li>the next command here should be "git add name_of_the_file_to_track" and in another way, considering to track all the files in this directory, then the comfortable command will be "git add *" which will add up all the files to be track in that folder </li>
+			<li>either do a "git status" to know the status and hint or go ahead to commit this file which is been tracked with this command "git commit -m 'message that depict the changes for easy understanding here' "</li>
+			<li>From this point on, you can </li>
+			<li>Cross checking with the flow after the commit as everything goes through with all clear message</li>
+			<li>git status at this stage will make life easy by notifying of the need to do "git push" from here as the next command</li>
+			<li>This will therefore ask for identity (configuration), <strong><em>NB:</em></strong> 
+				<ol>
+					<li>'git config' is simply okay for making it easy to identify different user from the same machine, these therefore will require doing this over and over per each project, while</li>
+					<li>'config-global' will be done just this once and need not ask for config again in any subsequent ones project.</li>
+				</ol>
+				...
+			  </li>
+			<li>thereafter, the next instruction, will be asking for the username for github in other to authorised with the right owner of the file, hence, username for github will be asked and thereby followed by the password for github is as well asked, to complete the authentication</li>
+			<li>Note in the instruction above, in the place for the password, this time, you are to use the generated Personal Access Code (PAC) gotten from the above <a href="#steps">step above</a> in the place of the github password, which is why it is necessary to have the token handy </li>
+		</ul>
+		<!-- The second possible way to do this/ possible way this can be achieved and done -->
+		<li><strong>Working from Local repository/directory to be pushed to Remote repo</strong></li>
+
+		<!-- Highlight of how to achieve this considering working from the local repo on the nachine -->
+		<ul>
+			<li></li>
+		</ul>
+		</ol>
+	</body>
+	</html>
